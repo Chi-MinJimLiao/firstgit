@@ -7,6 +7,11 @@ def fibonacci(n):
         f.append(f[i-1]+f[i-2])
     return f[n]
 
+def fibonacci_regression(n):
+    print('called function')
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
 
 
 
@@ -14,5 +19,4 @@ def fibonacci(n):
 
 if __name__ == '__main__':
     n= 5
-
     print(fibonacci(n))
